@@ -1,15 +1,25 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    /* border:1px solid black */
+    /* border:1px solid black; */
     
+}
+body {
+    background-color: #f7f9fa;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'anton', sans-serif;
+    
+    
 }
 h5 {
     margin-left: 2%;
 }
+
 p {
     font-family: 'Jura', sans-serif;
     margin-left: 5%;
@@ -26,14 +36,38 @@ p {
     
 }
 
+
 .navbar-nav {
     margin-left: auto;
-    margin-right: 0 !important;
+    margin-right: 0 !important;  
     
 }
 
+.nav-link {
+    position: relative;
+    
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 1.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #ff3300;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+
+
+
 .dropdown-menu {
-    background-image: url(../images/transparency.png);
     background-color: transparent !important;
     background-size: cover;
 }
@@ -42,6 +76,7 @@ p {
     color: cyan;
     text-decoration: none;
     background: black;
+    transition: 1.2s;
 }
 
 .dropdown-menu {
@@ -62,26 +97,58 @@ p {
     color: rgba(248, 238, 238, 0.997);
 }
 
-.btn-lg:hover {
-    background-color: #8ca52a;
-    transition: 1.2s;
-}
+ .card-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+ }
 
-.card-body:hover {
-    background-color: rgb(189, 34, 10);
-    transition: 1.2s;
-    flex: 1 1 auto;
+ .card {
+    background-color: #073b51;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+ }
+ .card-content {
+    padding: 20px;
+ }
+
+ .card-content h2 {
+    color: #0078c2;
+    font-size: 28px;
+    margin-bottom: 6px;
+    text-align: center;
+ }
+
+ .card-content p {
+    color: #eee;
+    text-align: center;
+ }
+ .card:hover {
+    transition: 1.3s;
+    background-color: darkgrey;
+    cursor: pointer;
+ }
+
+
+
+ footer {
+    background-color: black;
     
 
-}
+ }
 
-
-
-.cardContainer {
-    text-align: center;
-}
-
-.card {
-    display: flex;
-
-}
+ .footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    
+ }
+ 
