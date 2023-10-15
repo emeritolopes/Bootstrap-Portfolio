@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    /* border:1px solid black */
+    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'anton', sans-serif;
+}
+h5 {
+    margin-left: 2%;
+}
+p {
+    font-family: 'Jura', sans-serif;
+    margin-left: 5%;
+}
+
+
+.customNav {
+    position: absolute;
+    width: 100%;
+    background-image: url(/Bootstrap-Portfolio/images/transparency.png);
+    background-color: transparent !important;
+    background-size: cover;
+    z-index: 10;
+    
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+    
+}
+
+.dropdown-menu {
+    background-image: url(../images/transparency.png);
+    background-color: transparent !important;
+    background-size: cover;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: cyan;
+    text-decoration: none;
+    background: black;
+}
+
+.dropdown-menu {
+    left: -97px;
+}
+.meBackground {
+   background-image: url(../images/glass.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 500px;
+   height: calc(100vh - 25px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.meBackground p {
+    color: rgba(248, 238, 238, 0.997);
+}
+
+.btn-lg:hover {
+    background-color: #8ca52a;
+    transition: 1.2s;
+}
+
+.card-body:hover {
+    background-color: rgb(189, 34, 10);
+    transition: 1.2s;
+    flex: 1 1 auto;
+    
+
+}
+
+
+
+.cardContainer {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+
+}
