@@ -1,1 +1,2 @@
 # Bootstrap-Portfolio
+This is an updated version of the first portfolio created but this time bootstrap has been applied with some hover effects and the use of cards. That makes the presentation more organized and enjoyable for the user.
